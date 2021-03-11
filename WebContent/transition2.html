@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb08</title>
+<style type="text/css">
+	div.out {
+		border: 1px solid black;
+		width: 500px;
+	}
+	div.red {
+		height: 100px;
+		width: 100px;
+		background-color: red;
+		color: #ffffff;
+		text-align: center;
+		line-height: 100px;
+		transition: width 2s,
+		            background-color 2s,
+		            font-size 2s;
+		transition-time-function: ease;  /*ease; 느리게 빠르게 느리게*/
+		                          /* linear 일정한 속도 */
+		transition-delay: 1s; /* 기본값 0s */
+	}
+	div.red:hover {
+		width: 500px;
+		background-color: orange;
+		font-size: 150%;
+	}
+</style>
+</head>
+<body>
+	<h2>박스의 너비를 전환 예제</h2>
+	<div class="out">
+	<div class="red">
+		UI구현
+	</div>
+	</div>
+	<p>마우스를 올리면 상자가 커집니다-500px</p>
+</body>
+</html>
